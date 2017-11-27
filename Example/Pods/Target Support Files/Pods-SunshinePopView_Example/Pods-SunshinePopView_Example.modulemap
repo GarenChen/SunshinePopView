@@ -1,0 +1,6 @@
+framework module Pods_SunshinePopView_Example {
+  umbrella header "Pods-SunshinePopView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

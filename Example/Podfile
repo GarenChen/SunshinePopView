@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SunshinePopView_Example' do
+  pod 'SunshinePopView', :path => '../'
+
+  target 'SunshinePopView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
