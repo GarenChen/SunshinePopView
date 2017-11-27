@@ -14,6 +14,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C871862A1FCC0BC3000C359F /* CustomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87186271FCC0BC2000C359F /* CustomTransitionAnimator.swift */; };
+		C871862B1FCC0BC3000C359F /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87186281FCC0BC2000C359F /* CustomPresentationController.swift */; };
+		C871862C1FCC0BC3000C359F /* CustomTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87186291FCC0BC3000C359F /* CustomTransitionDelegate.swift */; };
+		C87186301FCC0C6F000C359F /* PopViewShowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871862F1FCC0C6F000C359F /* PopViewShowType.swift */; };
+		C87186321FCC0E90000C359F /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87186311FCC0E90000C359F /* PopViewController.swift */; };
+		C87186341FCC1415000C359F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87186331FCC1415000C359F /* UIView+Extension.swift */; };
 		DC22AA017093B332C84A5BAB /* Pods_SunshinePopView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9590767C9D338592A531DD57 /* Pods_SunshinePopView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,11 +47,17 @@
 		607FACE51AFB9204008FA782 /* SunshinePopView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunshinePopView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6E19ACD1301F95E551E9CAC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6E19ACD1301F95E551E9CAC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9590767C9D338592A531DD57 /* Pods_SunshinePopView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunshinePopView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D1D00E047E476D2C0A072AD /* SunshinePopView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SunshinePopView.podspec; path = ../SunshinePopView.podspec; sourceTree = "<group>"; };
+		9D1D00E047E476D2C0A072AD /* SunshinePopView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SunshinePopView.podspec; path = ../SunshinePopView.podspec; sourceTree = "<group>"; };
 		AB51A89D9D6B15BACB466736 /* Pods-SunshinePopView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunshinePopView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunshinePopView_Example/Pods-SunshinePopView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E2BC875CCECB1B118C0E3BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C87186271FCC0BC2000C359F /* CustomTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionAnimator.swift; sourceTree = "<group>"; };
+		C87186281FCC0BC2000C359F /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		C87186291FCC0BC3000C359F /* CustomTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionDelegate.swift; sourceTree = "<group>"; };
+		C871862F1FCC0C6F000C359F /* PopViewShowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopViewShowType.swift; sourceTree = "<group>"; };
+		C87186311FCC0E90000C359F /* PopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
+		C87186331FCC1415000C359F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E2BC875CCECB1B118C0E3BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FC1516CEBAC9903D31885EC0 /* Pods-SunshinePopView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunshinePopView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunshinePopView_Example/Pods-SunshinePopView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,12 +125,18 @@
 		607FACD21AFB9204008FA782 /* Example for SunshinePopView */ = {
 			isa = PBXGroup;
 			children = (
+				C87186281FCC0BC2000C359F /* CustomPresentationController.swift */,
+				C87186271FCC0BC2000C359F /* CustomTransitionAnimator.swift */,
+				C87186291FCC0BC3000C359F /* CustomTransitionDelegate.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				C871862F1FCC0C6F000C359F /* PopViewShowType.swift */,
+				C87186311FCC0E90000C359F /* PopViewController.swift */,
+				C87186331FCC1415000C359F /* UIView+Extension.swift */,
 			);
 			name = "Example for SunshinePopView";
 			path = SunshinePopView;
@@ -370,8 +388,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87186341FCC1415000C359F /* UIView+Extension.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				C87186301FCC0C6F000C359F /* PopViewShowType.swift in Sources */,
+				C87186321FCC0E90000C359F /* PopViewController.swift in Sources */,
+				C871862C1FCC0BC3000C359F /* CustomTransitionDelegate.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				C871862A1FCC0BC3000C359F /* CustomTransitionAnimator.swift in Sources */,
+				C871862B1FCC0BC3000C359F /* CustomPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

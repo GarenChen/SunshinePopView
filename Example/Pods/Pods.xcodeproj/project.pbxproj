@@ -15,6 +15,7 @@
 		65E25DC590F914E5B98B791635F00C99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9E5025188A0B298C0418D8DB5745A834 /* Pods-SunshinePopView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A83FDDB6C1784D0BC2AB7C875D7208 /* Pods-SunshinePopView_Example-dummy.m */; };
 		C635CB98B4A1336B386CE57D97EA6080 /* SunshinePopView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EDC2350EB1BF3069C27B3036B33F4 /* SunshinePopView-dummy.m */; };
+		C87186261FCC0900000C359F /* PopType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87186251FCC0900000C359F /* PopType.swift */; };
 		E4DAF3CB199DC92594DBF9B22BE3B7FF /* Pods-SunshinePopView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D42D9F96F03D18013186AC1F3B20F7 /* Pods-SunshinePopView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE43BF6F21A11105DA9298247FF4DB68 /* SunshinePopView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C706B50FBA10D7FAB55F29DA24ADD71 /* SunshinePopView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -35,7 +36,7 @@
 		154988E6AA89751B2870D23BB659D51A /* Pods-SunshinePopView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshinePopView_Example-umbrella.h"; sourceTree = "<group>"; };
 		2529C0FA372E64FA2445EB5ACD34898B /* Pods-SunshinePopView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Tests-resources.sh"; sourceTree = "<group>"; };
 		254C63DD1D89C9F50B918E84D34924B9 /* Pods-SunshinePopView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		26F497A660E6D54BA3433988FD9AB925 /* Pods-SunshinePopView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshinePopView_Tests.modulemap"; sourceTree = "<group>"; };
+		26F497A660E6D54BA3433988FD9AB925 /* Pods-SunshinePopView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SunshinePopView_Tests.modulemap"; sourceTree = "<group>"; };
 		30D5A65661AC83F4101F27141BE5B6B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35F6FD9A7E246952F0C97E9E02CF77B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8EDC2350EB1BF3069C27B3036B33F4 /* SunshinePopView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshinePopView-dummy.m"; sourceTree = "<group>"; };
@@ -44,23 +45,24 @@
 		4334E199D7A454F2BF7893AF85F1A850 /* Pods-SunshinePopView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Example-resources.sh"; sourceTree = "<group>"; };
 		43B2C25B70DA88945D6C8432D1C5C2EF /* Pods-SunshinePopView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshinePopView_Tests-dummy.m"; sourceTree = "<group>"; };
 		4C706B50FBA10D7FAB55F29DA24ADD71 /* SunshinePopView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshinePopView-umbrella.h"; sourceTree = "<group>"; };
-		4F6D1CA68599F4C84D6DB68ACBB90EA7 /* Pods_SunshinePopView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshinePopView_Example.framework; path = "Pods-SunshinePopView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D4757029AC1DFEA9D8DC4A88CFFC24 /* Pods_SunshinePopView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshinePopView_Tests.framework; path = "Pods-SunshinePopView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6D1CA68599F4C84D6DB68ACBB90EA7 /* Pods_SunshinePopView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunshinePopView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D4757029AC1DFEA9D8DC4A88CFFC24 /* Pods_SunshinePopView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunshinePopView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		795DF6939B3C2B51083127F814DBB25B /* Pods-SunshinePopView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshinePopView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85D42D9F96F03D18013186AC1F3B20F7 /* Pods-SunshinePopView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshinePopView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B0E917D903866B40FC6FEE968E44811 /* Pods-SunshinePopView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A4A83FDDB6C1784D0BC2AB7C875D7208 /* Pods-SunshinePopView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshinePopView_Example-dummy.m"; sourceTree = "<group>"; };
 		A6026C71E436FD92A2FF45D740EF9708 /* Pods-SunshinePopView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB1E7F8A49515CA70C3FEBB6908DBE3B /* SunshinePopView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshinePopView.modulemap; sourceTree = "<group>"; };
+		BB1E7F8A49515CA70C3FEBB6908DBE3B /* SunshinePopView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SunshinePopView.modulemap; sourceTree = "<group>"; };
 		BBFC412F7D4125ACDA21F9546F54C78B /* SunshinePopView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshinePopView.xcconfig; sourceTree = "<group>"; };
 		C366B5709BDB1E410B7A9A89D3446EBA /* Pods-SunshinePopView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C87186251FCC0900000C359F /* PopType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopType.swift; sourceTree = "<group>"; };
 		D50107323C05BF6FB029071AA090E080 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SunshinePopView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		D67868AFCDED086ACC8BF95274912051 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E37A037E4BDFBD4153DA873983B793 /* Pods-SunshinePopView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshinePopView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E0FE3A910303DCAD00980197CFC81641 /* SunshinePopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshinePopView.framework; path = SunshinePopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB6AA5A6C78B61107E51E82D0524E65F /* Pods-SunshinePopView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshinePopView_Example.modulemap"; sourceTree = "<group>"; };
+		E0FE3A910303DCAD00980197CFC81641 /* SunshinePopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunshinePopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6AA5A6C78B61107E51E82D0524E65F /* Pods-SunshinePopView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SunshinePopView_Example.modulemap"; sourceTree = "<group>"; };
 		F6620F33A4A01C1A280BFE15063DC4EE /* SunshinePopView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshinePopView-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 			children = (
 				D50107323C05BF6FB029071AA090E080 /* ReplaceMe.swift */,
 				60F0D0B12BFA2C29F04A8A175BC8FE19 /* Support Files */,
+				C87186251FCC0900000C359F /* PopType.swift */,
 			);
 			name = SunshinePopView;
 			path = ../..;
@@ -296,6 +299,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					1332C7C1A6BBEA3FD2A0D89F8079D97C = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E5025188A0B298C0418D8DB5745A834 /* Pods-SunshinePopView_Example-dummy.m in Sources */,
+				C87186261FCC0900000C359F /* PopType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 254C63DD1D89C9F50B918E84D34924B9 /* Pods-SunshinePopView_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -582,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C366B5709BDB1E410B7A9A89D3446EBA /* Pods-SunshinePopView_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
