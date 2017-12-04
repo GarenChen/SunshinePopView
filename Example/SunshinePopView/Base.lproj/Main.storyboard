@@ -1,25 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SunshinePopView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h7-8l-knc">
+                                <rect key="frame" x="10" y="120" width="111.5" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fMM-N1-0Nq"/>
+                                </constraints>
+                                <state key="normal" title="alert view"/>
+                                <connections>
+                                    <action selector="popAlertView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kuS-TR-lHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCy-xG-YxX">
+                                <rect key="frame" x="253.5" y="120" width="111.5" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BfO-bb-dLj"/>
+                                </constraints>
+                                <state key="normal" title="menu"/>
+                                <connections>
+                                    <action selector="popMenu:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="spQ-FS-PrY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb0-vA-UTh">
+                                <rect key="frame" x="131.5" y="120" width="112" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8gb-rB-I00"/>
+                                </constraints>
+                                <state key="normal" title="action sheet"/>
+                                <connections>
+                                    <action selector="popActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BVI-Q4-mgr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6h7-8l-knc" firstAttribute="width" secondItem="eb0-vA-UTh" secondAttribute="width" id="7z2-3h-JKI"/>
+                            <constraint firstItem="UCy-xG-YxX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="9dL-Bw-RZX"/>
+                            <constraint firstItem="6h7-8l-knc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="Cps-GT-o0Z"/>
+                            <constraint firstAttribute="trailing" secondItem="UCy-xG-YxX" secondAttribute="trailing" constant="10" id="HDO-PY-PPH"/>
+                            <constraint firstItem="eb0-vA-UTh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="J9M-nV-foL"/>
+                            <constraint firstItem="6h7-8l-knc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="Kza-0t-t9l"/>
+                            <constraint firstItem="eb0-vA-UTh" firstAttribute="width" secondItem="UCy-xG-YxX" secondAttribute="width" id="a16-PO-0Lu"/>
+                            <constraint firstItem="eb0-vA-UTh" firstAttribute="leading" secondItem="6h7-8l-knc" secondAttribute="trailing" constant="10" id="eSw-ta-eaQ"/>
+                            <constraint firstItem="UCy-xG-YxX" firstAttribute="leading" secondItem="eb0-vA-UTh" secondAttribute="trailing" constant="10" id="jnY-N4-hvc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="28.335832083958024"/>
         </scene>
     </scenes>
 </document>

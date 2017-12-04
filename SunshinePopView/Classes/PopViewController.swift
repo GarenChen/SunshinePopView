@@ -15,23 +15,15 @@ class PopViewController: UIViewController {
 			self.transitioningDelegate = customTransitioningDelegate
 		}
 	}
-	
-    var contentViewSize: CGSize = .zero
-	
-	var contentView: UIView? {
-		didSet {
-			
-		}
-	}
+
+	var contentView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 		guard let contentView = contentView else { return }
+		contentView.frame = self.view.bounds
+		contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 		view.addSubview(contentView)
-		let x = (UIScreen.main.bounds.size.width - contentViewSize.width) / 2
-		let y = UIScreen.main.bounds.size.height - contentViewSize.height
-		contentView.frame = CGRect(x: x, y: y, width: contentViewSize.width, height: contentViewSize.height)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
