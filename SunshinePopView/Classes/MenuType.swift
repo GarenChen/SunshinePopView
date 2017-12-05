@@ -24,7 +24,7 @@ extension MenuType where Self: UIView {
 		let presentationController = MenuTypePresentationController(presentedViewController: popController, presenting: controller, originFrame: originFrame)
 
 		presentationController.didDismissFromTapBackground = didDismiss
-		popController.customTransitioningDelegate = presentationController
+		popController.transitioningDelegate = presentationController
 		
 		controller.present(popController, animated: true, completion: didDisplay)
 	}

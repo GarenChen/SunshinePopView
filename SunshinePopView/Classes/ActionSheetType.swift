@@ -23,7 +23,7 @@ extension ActionSheetType where Self: UIView {
 		
 		let presentationController = ActionSheetPresentationController(presentedViewController: popController, presenting: controller)
 		presentationController.didDismissFromTapBackground = didDismiss
-		popController.customTransitioningDelegate = presentationController
+		popController.transitioningDelegate = presentationController
 		
 		controller.present(popController, animated: true, completion: didDisplay)
 	}
