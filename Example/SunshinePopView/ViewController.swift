@@ -80,7 +80,7 @@ class CustomActionSheetView: UIView, ActionSheetType {
 }
 
 class CustomAlertView: UIView, AlertViewType {
-	
+
 	var didDisplay: (() -> Void)?
 	
 	var didDismiss: (() -> Void)?
@@ -101,10 +101,14 @@ class CustomAlertView: UIView, AlertViewType {
 }
 
 class CustomMenuView: UIView, MenuType {
-	
+
 	var didDisplay: (() -> Void)?
 	
 	var didDismiss: (() -> Void)?
+	
+	var dimmingViewColor: UIColor {
+		return UIColor(white: 0, alpha: 0.3)
+	}
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)

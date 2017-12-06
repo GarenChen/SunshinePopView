@@ -11,11 +11,17 @@ import UIKit
 public protocol MenuType: class {
 	func showAsMenu(size: CGSize, originFrame: CGRect, in controller: UIViewController)
 	func dismiss()
+	var dimmingViewColor: UIColor {get}
 	var didDisplay: (() -> Void)? { get set }
 	var didDismiss: (() -> Void)? { get set }
 }
 
 extension MenuType where Self: UIView {
+	
+	public var dimmingViewColor: UIColor {
+		return UIColor(white: 0, alpha: 0.1)
+	}
+	
 	public func showAsMenu(size: CGSize, originFrame: CGRect, in controller: UIViewController) {
 		let popController = PopViewController()
 		popController.contentView = self
@@ -24,6 +30,7 @@ extension MenuType where Self: UIView {
 		let presentationController = MenuTypePresentationController(presentedViewController: popController, presenting: controller, originFrame: originFrame)
 
 		presentationController.didDismissFromTapBackground = didDismiss
+		presentationController.dimmingViewColor = dimmingViewColor
 		popController.transitioningDelegate = presentationController
 		
 		controller.present(popController, animated: true, completion: didDisplay)

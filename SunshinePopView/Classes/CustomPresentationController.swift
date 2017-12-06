@@ -16,11 +16,13 @@ public class CustomPresentationController: UIPresentationController, UIViewContr
 		return true
 	}
 	
+	public var dimmingViewColor: UIColor = UIColor(white: 0, alpha: 0.5)
+	
 	public var didDismissFromTapBackground: (() -> Void)?
 	
 	lazy var dimmingView: UIView = { [unowned self] in
         let dimmingView = UIView()
-        dimmingView.backgroundColor = .black
+        dimmingView.backgroundColor = self.dimmingViewColor
         dimmingView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapDimmingView(_:))))
         return dimmingView
     }()
@@ -36,7 +38,7 @@ public class CustomPresentationController: UIPresentationController, UIViewContr
         dimmingView.frame = containerView.bounds
         dimmingView.alpha = 0
         _ = presentedViewController.transitionCoordinator?.animate(alongsideTransition: { (coordinatorContex) in
-            self.dimmingView.alpha = 0.5
+            self.dimmingView.alpha = 1
         }, completion: nil)
     }
     

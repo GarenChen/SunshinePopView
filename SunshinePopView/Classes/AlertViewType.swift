@@ -11,11 +11,17 @@ import UIKit
 public protocol AlertViewType: class {
 	func showAsAlertView(size: CGSize, in controller: UIViewController)
 	func dismiss()
+	var dimmingViewColor: UIColor { get }
 	var didDisplay: (() -> Void)? { get set }
 	var didDismiss: (() -> Void)? { get set }
 }
 
 extension AlertViewType where Self: UIView {
+	
+	public var dimmingViewColor: UIColor {
+		return UIColor(white: 0, alpha: 0.5)
+	}
+	
 	public func showAsAlertView(size: CGSize, in controller: UIViewController) {
 		let popController = PopViewController()
 		popController.contentView = self
@@ -23,6 +29,7 @@ extension AlertViewType where Self: UIView {
 		
 		let presentationController = AlertViewTypePresentationController(presentedViewController: popController, presenting: controller)
 		presentationController.didDismissFromTapBackground = didDismiss
+		presentationController.dimmingViewColor = dimmingViewColor
 		popController.transitioningDelegate = presentationController
 		
 		controller.present(popController, animated: true, completion: didDisplay)
