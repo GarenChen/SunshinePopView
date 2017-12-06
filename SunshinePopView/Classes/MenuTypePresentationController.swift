@@ -24,7 +24,7 @@ class MenuTypePresentationController: CustomPresentationController {
 
 		let x = originFrame.maxX - presentedContentsize.width
 		let y = min(originFrame.maxY + 10, UIScreen.main.bounds.maxY - 7)
-		return CGRect(x: ,
+		return CGRect(x: x,
 					  y: y,
 					  width: presentedContentsize.width,
 					  height: presentedContentsize.height)
