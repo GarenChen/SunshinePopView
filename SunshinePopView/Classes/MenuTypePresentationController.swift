@@ -22,8 +22,10 @@ class MenuTypePresentationController: CustomPresentationController {
 		let containerBounds = containerView.bounds
 		let presentedContentsize = size(forChildContentContainer: self.presentedViewController, withParentContainerSize: containerBounds.size)
 
-		return CGRect(x: originFrame.maxX - presentedContentsize.width,
-					  y: originFrame.maxY + 8,
+		let x = originFrame.maxX - presentedContentsize.width
+		let y = min(originFrame.maxY + 10, UIScreen.main.bounds.maxY - 7)
+		return CGRect(x: ,
+					  y: y,
 					  width: presentedContentsize.width,
 					  height: presentedContentsize.height)
 	}
