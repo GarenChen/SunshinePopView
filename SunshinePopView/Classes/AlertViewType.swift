@@ -10,10 +10,9 @@ import UIKit
 
 public protocol AlertViewType: class {
 	func showAsAlertView(size: CGSize, in controller: UIViewController)
-	func dismiss()
+	func dismiss(animated: Bool, completion: (() ->Void)?)
 	var dimmingViewColor: UIColor { get }
-	var didDisplay: (() -> Void)? { get set }
-	var didDismiss: (() -> Void)? { get set }
+	var didTapBackground: (() -> Void)? { get set }
 }
 
 extension AlertViewType where Self: UIView {
@@ -28,14 +27,14 @@ extension AlertViewType where Self: UIView {
 		popController.preferredContentSize = size
 		
 		let presentationController = AlertViewTypePresentationController(presentedViewController: popController, presenting: controller)
-		presentationController.didDismissFromTapBackground = didDismiss
+		presentationController.didTapBackground = didTapBackground
 		presentationController.dimmingViewColor = dimmingViewColor
 		popController.transitioningDelegate = presentationController
 		
-		controller.present(popController, animated: true, completion: didDisplay)
+		controller.present(popController, animated: true, completion: nil)
 	}
 	
-	public func dismiss() {
-		self.parentViewController?.dismiss(animated: true, completion: didDismiss)
+	public func dismiss(animated: Bool = true, completion: (() ->Void)? = nil) {
+		self.parentViewController?.dismiss(animated: animated, completion: completion)
 	}
 }

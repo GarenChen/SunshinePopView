@@ -14,7 +14,6 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-		
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,34 +23,22 @@ class ViewController: UIViewController {
 	
 	@IBAction func popAlertView(_ sender: UIButton) {
 		let view = CustomAlertView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
-		view.didDisplay = {
-			print("did display")
-		}
-		view.didDismiss = {
-			print("did dismiss")
-		}
+
 		view.showAsAlertView(size: CGSize.init(width: 200, height: 200), in: self)
 	}
 	
 	@IBAction func popActionSheet(_ sender: UIButton) {
-		let view = CustomActionSheetView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
-		view.didDisplay = {
-			print("did display")
-		}
-		view.didDismiss = {
-			print("did dismiss")
-		}
-		view.showAsActionSheet(size: CGSize.init(width: 200, height: 200), in: self)
+		let view = CustomActionSheetView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200))
+
+		view.showAsActionSheet(size: CGSize.init(width: UIScreen.main.bounds.size.width - 4, height: 200), in: self)
 
 	}
 	
 	@IBAction func popMenu(_ sender: UIButton) {
 		let view = CustomMenuView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
-		view.didDisplay = {
-			print("did display")
-		}
-		view.didDismiss = {
-			print("did dismiss")
+
+		view.didClick = { [weak self] in
+			self?.navigationController?.pushViewController(ThirdViewController(), animated: true)
 		}
 		view.showAsMenu(size: CGSize.init(width: 200, height: 200), originFrame: sender.frame, in: self)
 	}
@@ -59,19 +46,23 @@ class ViewController: UIViewController {
 }
 
 class CustomActionSheetView: UIView, ActionSheetType {
-
-	var didDisplay: (() -> Void)?
 	
-	var didDismiss: (() -> Void)?
+	var didTapBackground: (() -> Void)?
+
+	var didClick: (() -> Void)?
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		self.backgroundColor = .red
 		self.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(click)))
+		self.didTapBackground = { [weak self] in
+			self?.dismiss()
+		}
 	}
 	
 	@objc func click() {
 		dismiss()
+		didClick?()
 	}
 	
 	required init?(coder aDecoder: NSCoder) {
@@ -80,15 +71,16 @@ class CustomActionSheetView: UIView, ActionSheetType {
 }
 
 class CustomAlertView: UIView, AlertViewType {
-
-	var didDisplay: (() -> Void)?
 	
-	var didDismiss: (() -> Void)?
+	var didTapBackground: (() -> Void)?
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		self.backgroundColor = .red
 		self.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(click)))
+		self.didTapBackground = { [weak self] in
+			self?.dismiss()
+		}
 	}
 	
 	@objc func click() {
@@ -101,10 +93,10 @@ class CustomAlertView: UIView, AlertViewType {
 }
 
 class CustomMenuView: UIView, MenuType {
-
-	var didDisplay: (() -> Void)?
 	
-	var didDismiss: (() -> Void)?
+	var didTapBackground: (() -> Void)?
+	
+	var didClick: (() -> Void)?
 	
 	var dimmingViewColor: UIColor {
 		return UIColor(white: 0, alpha: 0.3)
@@ -114,10 +106,13 @@ class CustomMenuView: UIView, MenuType {
 		super.init(frame: frame)
 		self.backgroundColor = .red
 		self.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(click)))
+		self.didTapBackground = { [weak self] in
+			self?.dismiss()
+		}
 	}
 	
 	@objc func click() {
-		dismiss()
+		dismiss(animated: true, completion: didClick)
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

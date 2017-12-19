@@ -18,7 +18,7 @@ public class CustomPresentationController: UIPresentationController, UIViewContr
 	
 	public var dimmingViewColor: UIColor = UIColor(white: 0, alpha: 0.5)
 	
-	public var didDismissFromTapBackground: (() -> Void)?
+	public var didTapBackground: (() -> Void)?
 	
 	lazy var dimmingView: UIView = { [unowned self] in
         let dimmingView = UIView()
@@ -70,9 +70,7 @@ public class CustomPresentationController: UIPresentationController, UIViewContr
 	}
     
     @objc private func didTapDimmingView(_ sender: UITapGestureRecognizer) {
-		if shouldDismissWhenTapBackground {
-			presentedViewController.dismiss(animated: true, completion: didDismissFromTapBackground)
-		}
+		didTapBackground?()
     }
 	
 	// MARK: - UIViewControllerAnimatedTransitioning

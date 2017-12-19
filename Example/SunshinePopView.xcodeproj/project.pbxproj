@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C8BA7D241FE9110E0029E709 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA7D231FE9110E0029E709 /* ThirdViewController.swift */; };
 		DC22AA017093B332C84A5BAB /* Pods_SunshinePopView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9590767C9D338592A531DD57 /* Pods_SunshinePopView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		9590767C9D338592A531DD57 /* Pods_SunshinePopView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunshinePopView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1D00E047E476D2C0A072AD /* SunshinePopView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SunshinePopView.podspec; path = ../SunshinePopView.podspec; sourceTree = "<group>"; };
 		AB51A89D9D6B15BACB466736 /* Pods-SunshinePopView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunshinePopView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunshinePopView_Example/Pods-SunshinePopView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C8BA7D231FE9110E0029E709 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		E2BC875CCECB1B118C0E3BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FC1516CEBAC9903D31885EC0 /* Pods-SunshinePopView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunshinePopView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunshinePopView_Example/Pods-SunshinePopView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				C8BA7D231FE9110E0029E709 /* ThirdViewController.swift */,
 			);
 			name = "Example for SunshinePopView";
 			path = SunshinePopView;
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				C8BA7D241FE9110E0029E709 /* ThirdViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

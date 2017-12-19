@@ -15,6 +15,10 @@ class PopViewController: UIViewController {
 			self.transitioningDelegate = customTransitioningDelegate
 		}
 	}
+	
+	deinit {
+		print("------ PopViewController deinit ---------")
+	}
 
 	var contentView: UIView?
 

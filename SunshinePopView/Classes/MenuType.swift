@@ -10,10 +10,9 @@ import UIKit
 
 public protocol MenuType: class {
 	func showAsMenu(size: CGSize, originFrame: CGRect, in controller: UIViewController)
-	func dismiss()
+	func dismiss(animated: Bool, completion: (() ->Void)?)
 	var dimmingViewColor: UIColor {get}
-	var didDisplay: (() -> Void)? { get set }
-	var didDismiss: (() -> Void)? { get set }
+	var didTapBackground: (() -> Void)? { get set }
 }
 
 extension MenuType where Self: UIView {
@@ -29,14 +28,14 @@ extension MenuType where Self: UIView {
 		
 		let presentationController = MenuTypePresentationController(presentedViewController: popController, presenting: controller, originFrame: originFrame)
 
-		presentationController.didDismissFromTapBackground = didDismiss
+		presentationController.didTapBackground = didTapBackground
 		presentationController.dimmingViewColor = dimmingViewColor
 		popController.transitioningDelegate = presentationController
 		
-		controller.present(popController, animated: true, completion: didDisplay)
+		controller.present(popController, animated: true, completion: nil)
 	}
 	
-	public func dismiss() {
-		self.parentViewController?.dismiss(animated: true, completion: didDismiss)
+	public func dismiss(animated: Bool = true, completion: (() ->Void)? = nil) {
+		self.parentViewController?.dismiss(animated: animated, completion: completion)
 	}
 }

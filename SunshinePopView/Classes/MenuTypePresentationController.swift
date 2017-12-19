@@ -12,6 +12,10 @@ class MenuTypePresentationController: CustomPresentationController {
 
 	var originFrame: CGRect!
 	
+	deinit {
+		print("------ MenuTypePresentationController deinit ---------")
+	}
+	
 	convenience init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, originFrame: CGRect) {
 		self.init(presentedViewController: presentedViewController, presenting: presentingViewController)
 		self.originFrame = originFrame

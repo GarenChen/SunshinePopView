@@ -10,10 +10,9 @@ import UIKit
 
 public protocol ActionSheetType: class {
 	func showAsActionSheet(size: CGSize, in controller: UIViewController)
-	func dismiss()
+	func dismiss(animated: Bool, completion: (() ->Void)?)
 	var dimmingViewColor: UIColor { get }
-	var didDisplay: (() -> Void)? { get set }
-	var didDismiss: (() -> Void)? { get set }
+	var didTapBackground: (() -> Void)? { get set }
 }
 
 extension ActionSheetType where Self: UIView {
@@ -28,14 +27,14 @@ extension ActionSheetType where Self: UIView {
 		popController.preferredContentSize = size
 		
 		let presentationController = ActionSheetPresentationController(presentedViewController: popController, presenting: controller)
-		presentationController.didDismissFromTapBackground = didDismiss
+		presentationController.didTapBackground = didTapBackground
 		presentationController.dimmingViewColor = dimmingViewColor
 		popController.transitioningDelegate = presentationController
 		
-		controller.present(popController, animated: true, completion: didDisplay)
+		controller.present(popController, animated: true, completion: nil)
 	}
 	
-	public func dismiss() {
-		self.parentViewController?.dismiss(animated: true, completion: didDismiss)
+	public func dismiss(animated: Bool = true, completion: (() ->Void)? = nil) {
+		self.parentViewController?.dismiss(animated: animated, completion: completion)
 	}
 }
