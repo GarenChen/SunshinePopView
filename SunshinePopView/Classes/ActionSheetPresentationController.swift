@@ -10,10 +10,6 @@ import UIKit
 
 class ActionSheetPresentationController: CustomPresentationController {
 
-//	override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
-//		super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
-//	}
-	
 	override var frameOfPresentedViewInContainerView: CGRect {
 		guard let containerView = containerView else { return .zero }
 		let containerBounds = containerView.bounds

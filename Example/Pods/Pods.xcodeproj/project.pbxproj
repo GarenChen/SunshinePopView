@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0047D25DECA18C17FEB1A254BAD7095E /* AlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B45F9B892597247A2CE7F7E8F7D92D5 /* AlertViewType.swift */; };
 		06394F421D308D0213BF520D23E940DF /* Pods-SunshinePopView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B2C25B70DA88945D6C8432D1C5C2EF /* Pods-SunshinePopView_Tests-dummy.m */; };
-		169C49044DA1413719047A9B51DE18EB /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061BE76B1E16C4B4BDF48BD202A6C6D /* CustomPresentationController.swift */; };
+		0CD3F4DF30B5A114C9AC630A2101CA49 /* ActionSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787534DDE9CB2B74BCFAF44297B9F68B /* ActionSheetPresentationController.swift */; };
 		1EF0D70CBF1B6FF59623A562D04037AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		1F89622F537B9AA9C29B652C711DC5D6 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738AF44FC98E4EC2DDBACEFDAC655572 /* MenuType.swift */; };
-		3383BAC58C030730B94370BCC4DDB1D3 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C09EFBA4B2F67CD26F6A787844084F /* PopViewController.swift */; };
+		22A1805F58DA93E68A43221F03093E48 /* AlertViewTypePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1C8E15A8A9545E278ED9DE107A3443 /* AlertViewTypePresentationController.swift */; };
+		28E8337B222FA619E4D5473B4F7F8172 /* ActionSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA41E7BBF67FB5604C0C39F5A6B2B6 /* ActionSheetType.swift */; };
+		2BA1CBAE58AA8ADECEE26AD638C5DD51 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D7666EA227C23CC9DEF4D1D973FA7D /* UIView+Extension.swift */; };
+		3248CE2B91D663177FD7970C7381267E /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B914C7C1FE381133E15CE5CA94B1A3F /* MenuType.swift */; };
 		389F66BA09A66DA47DCD534B5C550041 /* Pods-SunshinePopView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 154988E6AA89751B2870D23BB659D51A /* Pods-SunshinePopView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F3D56F44B5D3CFCEAB157A5203A259C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F817C67701AC2B46AA74B6F63E6E6F4 /* UIView+Extension.swift */; };
+		3BDC514F6FFEB05ED3E84CB046FE4384 /* MenuTypePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C7E3FB1585E9D07571EF6CA6B68B64 /* MenuTypePresentationController.swift */; };
 		56E9B721261FD9CC5B721AC926B5E2D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		65E25DC590F914E5B98B791635F00C99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7AE435877647F108B5D839A6EBE2C5AE /* SunshinePopView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A28AA709C8136E5B18772730328F47 /* SunshinePopView-dummy.m */; };
-		92ADF8AB292843D62320D2D34FC1DE89 /* MenuTypePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5041E7E2E9F1280E9EA8F69A63AE97E /* MenuTypePresentationController.swift */; };
+		73DF99CAD65967F6DEDB8A562CF9D5E6 /* SunshinePopView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 196E297B468AD90AC2A8A3D55C13F5E3 /* SunshinePopView-dummy.m */; };
+		94A9418F0CF017EF1E9B2486DFC9D30C /* AlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CC6CD2B3BFC1211C96330553B4BF27 /* AlertViewType.swift */; };
 		9E5025188A0B298C0418D8DB5745A834 /* Pods-SunshinePopView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A83FDDB6C1784D0BC2AB7C875D7208 /* Pods-SunshinePopView_Example-dummy.m */; };
-		A0D757879774C5106ABD904569956C7C /* ActionSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374680795F87924BEBF57EB4D901BAF /* ActionSheetPresentationController.swift */; };
-		B3B01438937F802174813E203D31B62D /* AlertViewTypePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9990F2B7429330A1D90EF5E7916D48A3 /* AlertViewTypePresentationController.swift */; };
-		CAA7C052E8F019E3821FC36591F4F36B /* ActionSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9564788295CD464FE75FFC10BDBE7C /* ActionSheetType.swift */; };
+		BAF61B5058F30233415882A1CB7F415B /* ShowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41AE434184B667ACDE8C70BA2C6BA2 /* ShowType.swift */; };
+		CD9A2B1FD66E6FE157525FDB9C99F999 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35312CD9C049FB48EDEF6693B88B4407 /* PopViewController.swift */; };
+		E1B7D209E832D15962ECC9556423179B /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8946F175D41543CFC95654E06AF62 /* CustomPresentationController.swift */; };
 		E4DAF3CB199DC92594DBF9B22BE3B7FF /* Pods-SunshinePopView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D42D9F96F03D18013186AC1F3B20F7 /* Pods-SunshinePopView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE43BF6F21A11105DA9298247FF4DB68 /* SunshinePopView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A43E0F098A8CEEA527DAB75B05C7970 /* SunshinePopView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE43BF6F21A11105DA9298247FF4DB68 /* SunshinePopView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0986F4BAEE10727AE6285BA58984019 /* SunshinePopView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,46 +39,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A43E0F098A8CEEA527DAB75B05C7970 /* SunshinePopView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshinePopView-umbrella.h"; sourceTree = "<group>"; };
+		02DA10F0D71610F8BDFA9BA7F583333A /* SunshinePopView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshinePopView-prefix.pch"; sourceTree = "<group>"; };
 		0AF5E4353F166A0D3E3D06703FC17443 /* Pods-SunshinePopView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshinePopView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0B45F9B892597247A2CE7F7E8F7D92D5 /* AlertViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewType.swift; path = SunshinePopView/Classes/AlertViewType.swift; sourceTree = "<group>"; };
 		0EB1C70EEBD0E6C75F177437EAE76AB9 /* Pods-SunshinePopView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshinePopView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		154988E6AA89751B2870D23BB659D51A /* Pods-SunshinePopView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshinePopView_Example-umbrella.h"; sourceTree = "<group>"; };
-		1ADE43F53D83FAF2FA4414EE413EA844 /* SunshinePopView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshinePopView.modulemap; sourceTree = "<group>"; };
-		1F817C67701AC2B46AA74B6F63E6E6F4 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "SunshinePopView/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		196E297B468AD90AC2A8A3D55C13F5E3 /* SunshinePopView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshinePopView-dummy.m"; sourceTree = "<group>"; };
 		2529C0FA372E64FA2445EB5ACD34898B /* Pods-SunshinePopView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Tests-resources.sh"; sourceTree = "<group>"; };
 		254C63DD1D89C9F50B918E84D34924B9 /* Pods-SunshinePopView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		26F497A660E6D54BA3433988FD9AB925 /* Pods-SunshinePopView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshinePopView_Tests.modulemap"; sourceTree = "<group>"; };
 		30D5A65661AC83F4101F27141BE5B6B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35312CD9C049FB48EDEF6693B88B4407 /* PopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopViewController.swift; path = SunshinePopView/Classes/PopViewController.swift; sourceTree = "<group>"; };
+		39BA41E7BBF67FB5604C0C39F5A6B2B6 /* ActionSheetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetType.swift; path = SunshinePopView/Classes/ActionSheetType.swift; sourceTree = "<group>"; };
 		3EB4F3205B29869BA69E47055FE3205A /* Pods-SunshinePopView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		42150945276576E972202C90F647090C /* Pods-SunshinePopView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4334E199D7A454F2BF7893AF85F1A850 /* Pods-SunshinePopView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Example-resources.sh"; sourceTree = "<group>"; };
 		43B2C25B70DA88945D6C8432D1C5C2EF /* Pods-SunshinePopView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshinePopView_Tests-dummy.m"; sourceTree = "<group>"; };
 		4F6D1CA68599F4C84D6DB68ACBB90EA7 /* Pods_SunshinePopView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshinePopView_Example.framework; path = "Pods-SunshinePopView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55C09EFBA4B2F67CD26F6A787844084F /* PopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopViewController.swift; path = SunshinePopView/Classes/PopViewController.swift; sourceTree = "<group>"; };
-		5CD3806D15EA850FD5D86A119625A68D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DF99DB6F0FFA6F07B7B31C913BA901D /* SunshinePopView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshinePopView-prefix.pch"; sourceTree = "<group>"; };
 		62D4757029AC1DFEA9D8DC4A88CFFC24 /* Pods_SunshinePopView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshinePopView_Tests.framework; path = "Pods-SunshinePopView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		738AF44FC98E4EC2DDBACEFDAC655572 /* MenuType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuType.swift; path = SunshinePopView/Classes/MenuType.swift; sourceTree = "<group>"; };
-		75A28AA709C8136E5B18772730328F47 /* SunshinePopView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshinePopView-dummy.m"; sourceTree = "<group>"; };
+		68D7666EA227C23CC9DEF4D1D973FA7D /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "SunshinePopView/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		6B914C7C1FE381133E15CE5CA94B1A3F /* MenuType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuType.swift; path = SunshinePopView/Classes/MenuType.swift; sourceTree = "<group>"; };
+		70C7E3FB1585E9D07571EF6CA6B68B64 /* MenuTypePresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuTypePresentationController.swift; path = SunshinePopView/Classes/MenuTypePresentationController.swift; sourceTree = "<group>"; };
+		787534DDE9CB2B74BCFAF44297B9F68B /* ActionSheetPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetPresentationController.swift; path = SunshinePopView/Classes/ActionSheetPresentationController.swift; sourceTree = "<group>"; };
 		795DF6939B3C2B51083127F814DBB25B /* Pods-SunshinePopView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshinePopView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8374680795F87924BEBF57EB4D901BAF /* ActionSheetPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetPresentationController.swift; path = SunshinePopView/Classes/ActionSheetPresentationController.swift; sourceTree = "<group>"; };
+		7D1C8E15A8A9545E278ED9DE107A3443 /* AlertViewTypePresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewTypePresentationController.swift; path = SunshinePopView/Classes/AlertViewTypePresentationController.swift; sourceTree = "<group>"; };
 		85D42D9F96F03D18013186AC1F3B20F7 /* Pods-SunshinePopView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshinePopView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		87950F25A06EE751D543379BEDEC1B05 /* SunshinePopView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshinePopView.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9990F2B7429330A1D90EF5E7916D48A3 /* AlertViewTypePresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewTypePresentationController.swift; path = SunshinePopView/Classes/AlertViewTypePresentationController.swift; sourceTree = "<group>"; };
 		9B0E917D903866B40FC6FEE968E44811 /* Pods-SunshinePopView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshinePopView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9E343146695BD1C31C20F96EA54A3EC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0986F4BAEE10727AE6285BA58984019 /* SunshinePopView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshinePopView-umbrella.h"; sourceTree = "<group>"; };
 		A4A83FDDB6C1784D0BC2AB7C875D7208 /* Pods-SunshinePopView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshinePopView_Example-dummy.m"; sourceTree = "<group>"; };
 		A6026C71E436FD92A2FF45D740EF9708 /* Pods-SunshinePopView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE014DE5AFB5E7A702A642D347BA2FFF /* SunshinePopView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshinePopView.xcconfig; sourceTree = "<group>"; };
-		C061BE76B1E16C4B4BDF48BD202A6C6D /* CustomPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomPresentationController.swift; path = SunshinePopView/Classes/CustomPresentationController.swift; sourceTree = "<group>"; };
+		AFC8946F175D41543CFC95654E06AF62 /* CustomPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomPresentationController.swift; path = SunshinePopView/Classes/CustomPresentationController.swift; sourceTree = "<group>"; };
 		C366B5709BDB1E410B7A9A89D3446EBA /* Pods-SunshinePopView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshinePopView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D67868AFCDED086ACC8BF95274912051 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E37A037E4BDFBD4153DA873983B793 /* Pods-SunshinePopView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshinePopView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E0FE3A910303DCAD00980197CFC81641 /* SunshinePopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshinePopView.framework; path = SunshinePopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6AA5A6C78B61107E51E82D0524E65F /* Pods-SunshinePopView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshinePopView_Example.modulemap"; sourceTree = "<group>"; };
-		ED9564788295CD464FE75FFC10BDBE7C /* ActionSheetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetType.swift; path = SunshinePopView/Classes/ActionSheetType.swift; sourceTree = "<group>"; };
-		F5041E7E2E9F1280E9EA8F69A63AE97E /* MenuTypePresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuTypePresentationController.swift; path = SunshinePopView/Classes/MenuTypePresentationController.swift; sourceTree = "<group>"; };
+		EF41AE434184B667ACDE8C70BA2C6BA2 /* ShowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShowType.swift; path = SunshinePopView/Classes/ShowType.swift; sourceTree = "<group>"; };
+		EF7028AF2D2529EB5A00A11E7AF6CE5D /* SunshinePopView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshinePopView.modulemap; sourceTree = "<group>"; };
+		F7CC6CD2B3BFC1211C96330553B4BF27 /* AlertViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewType.swift; path = SunshinePopView/Classes/AlertViewType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,19 +129,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		79D685904BF7A2C3B4B8E0C4A1947A92 /* Development Pods */ = {
+		3B8F03FF4EB4C01A90F30E0512826CF4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C24E6BC20EDFCD24AA06CB801FFF8418 /* SunshinePopView */,
+				5057210C8E2F273EC6884AFCAC98B6C5 /* SunshinePopView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5057210C8E2F273EC6884AFCAC98B6C5 /* SunshinePopView */ = {
+			isa = PBXGroup;
+			children = (
+				787534DDE9CB2B74BCFAF44297B9F68B /* ActionSheetPresentationController.swift */,
+				39BA41E7BBF67FB5604C0C39F5A6B2B6 /* ActionSheetType.swift */,
+				F7CC6CD2B3BFC1211C96330553B4BF27 /* AlertViewType.swift */,
+				7D1C8E15A8A9545E278ED9DE107A3443 /* AlertViewTypePresentationController.swift */,
+				AFC8946F175D41543CFC95654E06AF62 /* CustomPresentationController.swift */,
+				6B914C7C1FE381133E15CE5CA94B1A3F /* MenuType.swift */,
+				70C7E3FB1585E9D07571EF6CA6B68B64 /* MenuTypePresentationController.swift */,
+				35312CD9C049FB48EDEF6693B88B4407 /* PopViewController.swift */,
+				EF41AE434184B667ACDE8C70BA2C6BA2 /* ShowType.swift */,
+				68D7666EA227C23CC9DEF4D1D973FA7D /* UIView+Extension.swift */,
+				E4FA84E2B1DB4C7E1D974B35B568B307 /* Support Files */,
+			);
+			name = SunshinePopView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				79D685904BF7A2C3B4B8E0C4A1947A92 /* Development Pods */,
+				3B8F03FF4EB4C01A90F30E0512826CF4 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				0EA59896D64D4B6DAA51B3E5604A44C4 /* Products */,
 				320F30148C548EC2427F71D1E9784EBE /* Targets Support Files */,
@@ -162,20 +183,6 @@
 			);
 			name = "Pods-SunshinePopView_Example";
 			path = "Target Support Files/Pods-SunshinePopView_Example";
-			sourceTree = "<group>";
-		};
-		88F7C06A1A1C945B23F922B2BFF1A774 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CD3806D15EA850FD5D86A119625A68D /* Info.plist */,
-				1ADE43F53D83FAF2FA4414EE413EA844 /* SunshinePopView.modulemap */,
-				BE014DE5AFB5E7A702A642D347BA2FFF /* SunshinePopView.xcconfig */,
-				75A28AA709C8136E5B18772730328F47 /* SunshinePopView-dummy.m */,
-				5DF99DB6F0FFA6F07B7B31C913BA901D /* SunshinePopView-prefix.pch */,
-				0A43E0F098A8CEEA527DAB75B05C7970 /* SunshinePopView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SunshinePopView";
 			sourceTree = "<group>";
 		};
 		9D8FF05899553E8D65EDFFB207860899 /* Pods-SunshinePopView_Tests */ = {
@@ -204,30 +211,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C24E6BC20EDFCD24AA06CB801FFF8418 /* SunshinePopView */ = {
-			isa = PBXGroup;
-			children = (
-				8374680795F87924BEBF57EB4D901BAF /* ActionSheetPresentationController.swift */,
-				ED9564788295CD464FE75FFC10BDBE7C /* ActionSheetType.swift */,
-				0B45F9B892597247A2CE7F7E8F7D92D5 /* AlertViewType.swift */,
-				9990F2B7429330A1D90EF5E7916D48A3 /* AlertViewTypePresentationController.swift */,
-				C061BE76B1E16C4B4BDF48BD202A6C6D /* CustomPresentationController.swift */,
-				738AF44FC98E4EC2DDBACEFDAC655572 /* MenuType.swift */,
-				F5041E7E2E9F1280E9EA8F69A63AE97E /* MenuTypePresentationController.swift */,
-				55C09EFBA4B2F67CD26F6A787844084F /* PopViewController.swift */,
-				1F817C67701AC2B46AA74B6F63E6E6F4 /* UIView+Extension.swift */,
-				88F7C06A1A1C945B23F922B2BFF1A774 /* Support Files */,
-			);
-			name = SunshinePopView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E4FA84E2B1DB4C7E1D974B35B568B307 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E343146695BD1C31C20F96EA54A3EC9 /* Info.plist */,
+				EF7028AF2D2529EB5A00A11E7AF6CE5D /* SunshinePopView.modulemap */,
+				87950F25A06EE751D543379BEDEC1B05 /* SunshinePopView.xcconfig */,
+				196E297B468AD90AC2A8A3D55C13F5E3 /* SunshinePopView-dummy.m */,
+				02DA10F0D71610F8BDFA9BA7F583333A /* SunshinePopView-prefix.pch */,
+				A0986F4BAEE10727AE6285BA58984019 /* SunshinePopView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SunshinePopView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B8DAA55492632297E21E61059120EC3 /* Build configuration list for PBXNativeTarget "SunshinePopView" */;
 			buildPhases = (
-				5BE3AFBCB9B86263D2E86A6B05D93EAE /* Sources */,
+				E6B39CBD12F929F808646864FBDF77A0 /* Sources */,
 				6D920D98B8CCAAC9B3A6A7E1ABF25879 /* Frameworks */,
 				074220B6B080A699D80A7AB4B892C2FB /* Headers */,
 			);
@@ -341,23 +344,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5BE3AFBCB9B86263D2E86A6B05D93EAE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0D757879774C5106ABD904569956C7C /* ActionSheetPresentationController.swift in Sources */,
-				CAA7C052E8F019E3821FC36591F4F36B /* ActionSheetType.swift in Sources */,
-				0047D25DECA18C17FEB1A254BAD7095E /* AlertViewType.swift in Sources */,
-				B3B01438937F802174813E203D31B62D /* AlertViewTypePresentationController.swift in Sources */,
-				169C49044DA1413719047A9B51DE18EB /* CustomPresentationController.swift in Sources */,
-				1F89622F537B9AA9C29B652C711DC5D6 /* MenuType.swift in Sources */,
-				92ADF8AB292843D62320D2D34FC1DE89 /* MenuTypePresentationController.swift in Sources */,
-				3383BAC58C030730B94370BCC4DDB1D3 /* PopViewController.swift in Sources */,
-				7AE435877647F108B5D839A6EBE2C5AE /* SunshinePopView-dummy.m in Sources */,
-				3F3D56F44B5D3CFCEAB157A5203A259C /* UIView+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5DE5F90418105E00F4B807FF1D169661 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +357,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E5025188A0B298C0418D8DB5745A834 /* Pods-SunshinePopView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B39CBD12F929F808646864FBDF77A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD3F4DF30B5A114C9AC630A2101CA49 /* ActionSheetPresentationController.swift in Sources */,
+				28E8337B222FA619E4D5473B4F7F8172 /* ActionSheetType.swift in Sources */,
+				94A9418F0CF017EF1E9B2486DFC9D30C /* AlertViewType.swift in Sources */,
+				22A1805F58DA93E68A43221F03093E48 /* AlertViewTypePresentationController.swift in Sources */,
+				E1B7D209E832D15962ECC9556423179B /* CustomPresentationController.swift in Sources */,
+				3248CE2B91D663177FD7970C7381267E /* MenuType.swift in Sources */,
+				3BDC514F6FFEB05ED3E84CB046FE4384 /* MenuTypePresentationController.swift in Sources */,
+				CD9A2B1FD66E6FE157525FDB9C99F999 /* PopViewController.swift in Sources */,
+				BAF61B5058F30233415882A1CB7F415B /* ShowType.swift in Sources */,
+				73DF99CAD65967F6DEDB8A562CF9D5E6 /* SunshinePopView-dummy.m in Sources */,
+				2BA1CBAE58AA8ADECEE26AD638C5DD51 /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +472,7 @@
 		};
 		30B2D643243E08A1CC49BB7B8B2E9183 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE014DE5AFB5E7A702A642D347BA2FFF /* SunshinePopView.xcconfig */;
+			baseConfigurationReference = 87950F25A06EE751D543379BEDEC1B05 /* SunshinePopView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -539,7 +543,7 @@
 		};
 		554CF2B5C898D4A82FC4DA26FBB9A9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE014DE5AFB5E7A702A642D347BA2FFF /* SunshinePopView.xcconfig */;
+			baseConfigurationReference = 87950F25A06EE751D543379BEDEC1B05 /* SunshinePopView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

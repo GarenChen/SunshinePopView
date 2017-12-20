@@ -8,14 +8,15 @@
 
 import UIKit
 
+fileprivate struct MenuUIConfig {
+	static let menuOffset: CGFloat = 9
+	static let menuMinPadding: CGFloat = 7
+}
+
 class MenuTypePresentationController: CustomPresentationController {
 
 	var originFrame: CGRect!
-	
-	deinit {
-		print("------ MenuTypePresentationController deinit ---------")
-	}
-	
+
 	convenience init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, originFrame: CGRect) {
 		self.init(presentedViewController: presentedViewController, presenting: presentingViewController)
 		self.originFrame = originFrame
@@ -25,8 +26,8 @@ class MenuTypePresentationController: CustomPresentationController {
 		guard let containerView = containerView else { return .zero }
 		let containerBounds = containerView.bounds
 		let presentedContentsize = size(forChildContentContainer: self.presentedViewController, withParentContainerSize: containerBounds.size)
-		let x = min(originFrame.maxX + 9 - presentedContentsize.width,
-					UIScreen.main.bounds.maxX - 7)
+		let x = min(originFrame.maxX + MenuUIConfig.menuOffset - presentedContentsize.width,
+					UIScreen.main.bounds.maxX - MenuUIConfig.menuMinPadding)
 		return CGRect(x: x,
 					  y: originFrame.maxY,
 					  width: presentedContentsize.width,

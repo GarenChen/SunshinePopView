@@ -40,7 +40,8 @@ class ViewController: UIViewController {
 		view.didClick = { [weak self] in
 			self?.navigationController?.pushViewController(ThirdViewController(), animated: true)
 		}
-		view.showAsMenu(size: CGSize.init(width: 200, height: 200), originFrame: sender.frame, in: self)
+		view.show(as: .menu(sender.frame), size: CGSize.init(width: 200, height: 200), in: self)
+//		view.showAsMenu(size: CGSize.init(width: 200, height: 200), originFrame: sender.frame, in: self)
 	}
 
 }
@@ -70,7 +71,7 @@ class CustomActionSheetView: UIView, ActionSheetType {
 	}
 }
 
-class CustomAlertView: UIView, AlertViewType {
+class CustomAlertView: UIView,AlertViewType  {
 	
 	var didTapBackground: (() -> Void)?
 	
@@ -92,7 +93,7 @@ class CustomAlertView: UIView, AlertViewType {
 	}
 }
 
-class CustomMenuView: UIView, MenuType {
+class CustomMenuView: UIView, PopViewShowType {
 	
 	var didTapBackground: (() -> Void)?
 	

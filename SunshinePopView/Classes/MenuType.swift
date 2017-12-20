@@ -25,13 +25,10 @@ extension MenuType where Self: UIView {
 		let popController = PopViewController()
 		popController.contentView = self
 		popController.preferredContentSize = size
-		
 		let presentationController = MenuTypePresentationController(presentedViewController: popController, presenting: controller, originFrame: originFrame)
-
 		presentationController.didTapBackground = didTapBackground
 		presentationController.dimmingViewColor = dimmingViewColor
 		popController.transitioningDelegate = presentationController
-		
 		controller.present(popController, animated: true, completion: nil)
 	}
 	
