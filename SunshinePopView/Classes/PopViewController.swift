@@ -25,9 +25,13 @@ class PopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		guard let contentView = contentView else { return }
-		contentView.frame = self.view.bounds
-		contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 		view.addSubview(contentView)
+		view.addConstraints([
+			NSLayoutConstraint.init(item: contentView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 0),
+			NSLayoutConstraint.init(item: contentView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0),
+			NSLayoutConstraint.init(item: contentView, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.left, multiplier: 1, constant: 0),
+			NSLayoutConstraint.init(item: contentView, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.right, multiplier: 1, constant: 0)
+			])
     }
 
     override func didReceiveMemoryWarning() {
