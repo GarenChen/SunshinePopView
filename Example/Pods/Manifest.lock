@@ -1,7 +1,9 @@
 PODS:
+  - SnapKit (4.0.0)
   - SunshinePopView (0.1.0)
 
 DEPENDENCIES:
+  - SnapKit
   - SunshinePopView (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SunshinePopView: d09fe50da97be41f6d3acfe97f18e9818b695671
 
-PODFILE CHECKSUM: bcb1dd3c4ed8022341c724a696ef03c817788fc3
+PODFILE CHECKSUM: fc0b080d453b1d28b5bf816c267afde9f1eec545
 
 COCOAPODS: 1.3.0.rc.1

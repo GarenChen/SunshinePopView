@@ -14,6 +14,13 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+		
+		let alertView = AlertView.init(title: "标题标题标题", detail: "详情detailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetails", cancelButtonTitle: "取消", otherButtonTitles: ["非常好", "好", "不太好", "很不好"])
+		view.addSubview(alertView)
+		alertView.snp.makeConstraints({
+			$0.left.right.bottom.equalToSuperview()
+		})
+		
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,9 +29,11 @@ class ViewController: UIViewController {
     }
 	
 	@IBAction func popAlertView(_ sender: UIButton) {
-		let view = CustomAlertView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
-
-		view.showAsAlertView(size: CGSize.init(width: 200, height: 200), in: self)
+//		let view = CustomAlertView.init(frame: CGRect.init(x: 0, y: 0, width: 200, height: 200))
+		let alertView = AlertView.init(title: "标题标题标题", detail: "详情detailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetailsdetails", cancelButtonTitle: "取消", otherButtonTitles: ["非常好", "好", "不太好", "很不好"])
+		let size = alertView.systemLayoutSizeFitting(CGSize.init(width: UIScreen.main.bounds.width - 30, height: CGFloat.infinity), withHorizontalFittingPriority: UILayoutPriority.defaultHigh, verticalFittingPriority: UILayoutPriority.fittingSizeLevel)
+		alertView.backgroundColor = .white
+		alertView.showAsAlertView(size: size, in: self)
 	}
 	
 	@IBAction func popActionSheet(_ sender: UIButton) {
@@ -41,7 +50,6 @@ class ViewController: UIViewController {
 			self?.navigationController?.pushViewController(ThirdViewController(), animated: true)
 		}
 		view.show(as: .menu(sender.frame), size: CGSize.init(width: 200, height: 200), in: self)
-//		view.showAsMenu(size: CGSize.init(width: 200, height: 200), originFrame: sender.frame, in: self)
 	}
 
 }
@@ -70,6 +78,23 @@ class CustomActionSheetView: UIView, ActionSheetType {
 		fatalError("init(coder:) has not been implemented")
 	}
 }
+
+extension AlertView: AlertViewType {
+	
+	var didTapBackground: (() -> Void)? {
+		get {
+			return { [weak self] in
+				self?.dismiss()
+			}
+		}
+		set(newValue) {
+			
+		}
+	}
+	
+	
+}
+
 
 class CustomAlertView: UIView,AlertViewType  {
 	

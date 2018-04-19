@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '28F6DF1F916462DA7A2A98121130E8BE'
-               BlueprintName = 'SunshinePopView'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SunshinePopView.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9C96D9B0E0565FA70B8E429AAD49CFD1"
+               BlueprintName = "SunshinePopView"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "SunshinePopView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

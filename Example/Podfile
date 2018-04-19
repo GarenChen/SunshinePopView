@@ -8,4 +8,5 @@ target 'SunshinePopView_Example' do
 
     
   end
+  pod 'SnapKit'
 end
